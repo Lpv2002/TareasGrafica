@@ -1,0 +1,33 @@
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\TV.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\TV.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\casa3D.exe
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\casa3D.pdb
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\casa3D.exe.config
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\casa3D.exe
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\casa3D.pdb
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\OpenTK.dll
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\OpenTK.pdb
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\OpenTK.xml
+C:\Users\HP\Desktop\UNI\SEMESTRE 8\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\TV.csproj.Up2Date
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\TV.csproj.AssemblyReference.cache
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\TV.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\casa3D.exe
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\casa3D.pdb
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\casa3D.exe.config
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\casa3D.exe
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\casa3D.pdb
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\OpenTK.dll
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\OpenTK.pdb
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\bin\Debug\OpenTK.xml
+C:\Users\fabio\Desktop\PROGRAMACION GRAFICA\TAREA1\casa3D\casa3D\obj\Debug\TV.csproj.CopyComplete
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\bin\Debug\casa3D.exe.config
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\bin\Debug\casa3D.exe
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\bin\Debug\casa3D.pdb
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\bin\Debug\OpenTK.dll
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\bin\Debug\OpenTK.pdb
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\bin\Debug\OpenTK.xml
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\obj\Debug\TV.csproj.AssemblyReference.cache
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\obj\Debug\TV.csproj.CoreCompileInputs.cache
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\obj\Debug\TV.csproj.Up2Date
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\obj\Debug\casa3D.exe
+C:\Users\hp\Downloads\casa3D\casa3D\casa3D\obj\Debug\casa3D.pdb
