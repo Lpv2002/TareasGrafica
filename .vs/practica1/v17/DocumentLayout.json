@@ -1,18 +1,15 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\",
+  "WorkspaceRootPath": "C:\\Users\\hp\\Downloads\\letraT3D\\letraT3D\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8115D26A-C0F8-42CF-A6C7-277BF8539B57}|casa3D\\TV.csproj|c:\\users\\hp\\downloads\\casa3d\\casa3d\\casa3d\\dibujot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8115D26A-C0F8-42CF-A6C7-277BF8539B57}|casa3D\\TV.csproj|solutionrelative:casa3d\\dibujot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\dibujoT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8115D26A-C0F8-42CF-A6C7-277BF8539B57}|casa3D\\TV.csproj|c:\\users\\hp\\downloads\\casa3d\\casa3d\\casa3d\\t3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8115D26A-C0F8-42CF-A6C7-277BF8539B57}|casa3D\\TV.csproj|solutionrelative:casa3d\\t3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\T3D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8115D26A-C0F8-42CF-A6C7-277BF8539B57}|casa3D\\TV.csproj|C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3d\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8115D26A-C0F8-42CF-A6C7-277BF8539B57}|casa3D\\TV.csproj|solutionrelative:casa3d\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,40 +26,35 @@
               "DocumentIndex": 0,
               "Title": "dibujoT.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\dibujoT.cs",
-              "RelativeDocumentMoniker": "casa3D\\dibujoT.cs",
+              "RelativeDocumentMoniker": "..\\..\\casa3D\\casa3D\\casa3D\\dibujoT.cs",
               "ToolTip": "C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\dibujoT.cs",
-              "RelativeToolTip": "casa3D\\dibujoT.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAA7AAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\casa3D\\casa3D\\casa3D\\dibujoT.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T18:34:26.259Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "T3D.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\T3D.cs",
-              "RelativeDocumentMoniker": "casa3D\\T3D.cs",
+              "RelativeDocumentMoniker": "..\\..\\casa3D\\casa3D\\casa3D\\T3D.cs",
               "ToolTip": "C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\T3D.cs",
-              "RelativeToolTip": "casa3D\\T3D.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAcwCQAAAAeAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\casa3D\\casa3D\\casa3D\\T3D.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T21:00:39.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T21:00:39.073Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\Program.cs",
-              "RelativeDocumentMoniker": "casa3D\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\casa3D\\casa3D\\casa3D\\Program.cs",
               "ToolTip": "C:\\Users\\hp\\Downloads\\casa3D\\casa3D\\casa3D\\Program.cs",
-              "RelativeToolTip": "casa3D\\Program.cs",
+              "RelativeToolTip": "..\\..\\casa3D\\casa3D\\casa3D\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T18:50:17.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T18:50:17.786Z"
             }
           ]
         }

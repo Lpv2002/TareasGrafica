@@ -37,7 +37,7 @@ namespace practica1
             GL.ClearColor(Color4.Gray);
             GL.Enable(EnableCap.DepthTest);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
-            T = new practica1.dibujoT(0,0,0,new Vector3(0.2f,0.2f,-0.05f));
+            T = new practica1.dibujoT(0,0,0,new Vector3(0.0f,0.0f,0.0f));
             T.dibujar();
 
             Context.SwapBuffers();
@@ -46,7 +46,7 @@ namespace practica1
 
         protected override void OnUpdateFrame(FrameEventArgs e)
         {
-            GL.Rotate(1.0f, 0.1f, 0.1f, 0.0f);
+            GL.Rotate(1.0f, 0.0f, 0.1f, 0.0f);
             base.OnUpdateFrame(e);
         }
 

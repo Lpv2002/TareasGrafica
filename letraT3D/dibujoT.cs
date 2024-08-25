@@ -22,14 +22,15 @@ namespace practica1
 
         public void dibujar()
         {
-            float ancho = 0.4f;
-            float alto = 0.4f;
-            float grosor = 0.1f;
+            float ancho = 0.5f;
+            float alto = 0.5f;
+            float grosor = 0.2f;
 
             GL.Begin(PrimitiveType.Quads);
 
             // Parte horizontal de la "T" - Delante
             GL.Color4(Color.White);
+
             GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2, pos.Z + grosor / 2); // Superior izquierdo
             GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2, pos.Z + grosor / 2); // Superior derecho
             GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2); // Inferior derecho
@@ -55,34 +56,56 @@ namespace practica1
 
             GL.End();
 
-            GL.Begin(PrimitiveType.QuadStrip);
+            GL.Begin(PrimitiveType.Quads);
 
             // Uniendo parte delantera con trasera
-            // Parte horizontal
-            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2, pos.Z + grosor / 2);
-            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2, pos.Z - grosor / 2);
+            // Parte horizontal arriba
 
-            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2, pos.Z + grosor / 2);
-            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2, pos.Z - grosor / 2);
+            GL.Color4(Color.Red);
+            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2, pos.Z + grosor / 2); // Superior izquierdo - delante
+            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2, pos.Z - grosor / 2); // Superior izquierdo - atrás
+            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2, pos.Z - grosor / 2); // Superior derecho - atrás
+            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2, pos.Z + grosor / 2); // Superior derecho - delante
 
-            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2);
-            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2);
+            //parte horizontal abajo
 
-            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2);
-            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2);
+            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2); // Inferior izquierdo - delante
+            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2); // Inferior izquierdo - atrás
+            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2); // Inferior derecho - atrás
+            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2); // Inferior derecho - delante
 
-            // Parte vertical
-            GL.Vertex3(pos.X - grosor / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2);
-            GL.Vertex3(pos.X - grosor / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2);
+            //parte horizontal derecha
 
-            GL.Vertex3(pos.X + grosor / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2);
-            GL.Vertex3(pos.X + grosor / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2);
+            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2, pos.Z + grosor / 2); // Superior derecho - delante
+            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2, pos.Z - grosor / 2); // Superior derecho - atrás
+            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2); // Inferior derecho - atrás 
+            GL.Vertex3(pos.X + ancho / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2); // Inferior derecho - delante 
 
-            GL.Vertex3(pos.X - grosor / 2, pos.Y - alto / 2, pos.Z + grosor / 2);
-            GL.Vertex3(pos.X - grosor / 2, pos.Y - alto / 2, pos.Z - grosor / 2);
+            //parte horizontal izquierda
 
-            GL.Vertex3(pos.X + grosor / 2, pos.Y - alto / 2, pos.Z + grosor / 2);
-            GL.Vertex3(pos.X + grosor / 2, pos.Y - alto / 2, pos.Z - grosor / 2);
+            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2, pos.Z + grosor / 2); // Superior izquierda - delante 
+            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2, pos.Z - grosor / 2); // Superior izquierda - atrás 
+            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2); // Inferior izquierda - atrás 
+            GL.Vertex3(pos.X - ancho / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2); // Inferior izquierda - delante 
+
+
+            // Parte vertical derecha
+            GL.Vertex3(pos.X + grosor / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2); // Superior derecha - delante
+            GL.Vertex3(pos.X + grosor / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2); // Superior derecha - atrás
+            GL.Vertex3(pos.X + grosor / 2, pos.Y - alto / 2, pos.Z - grosor / 2); // Inferior derecha - atrás
+            GL.Vertex3(pos.X + grosor / 2, pos.Y - alto / 2, pos.Z + grosor / 2); // Inferior derecha - delante
+
+            // Parte vertical izquierda
+            GL.Vertex3(pos.X - grosor / 2, pos.Y + alto / 2 - grosor, pos.Z + grosor / 2); // Superior izquierda - delante
+            GL.Vertex3(pos.X - grosor / 2, pos.Y + alto / 2 - grosor, pos.Z - grosor / 2); // Superior izquierda - atrás
+            GL.Vertex3(pos.X - grosor / 2, pos.Y - alto / 2, pos.Z - grosor / 2); // Inferior izquierda - atrás
+            GL.Vertex3(pos.X - grosor / 2, pos.Y - alto / 2, pos.Z + grosor / 2); // Inferior izquierda - delante
+
+            //parte vertical inferior 
+            GL.Vertex3(pos.X - grosor / 2, pos.Y - alto / 2, pos.Z + grosor / 2); // Inferior derecha - delante
+            GL.Vertex3(pos.X - grosor / 2, pos.Y - alto / 2, pos.Z - grosor / 2); // Inferior derecha - atrás
+            GL.Vertex3(pos.X + grosor / 2, pos.Y - alto / 2, pos.Z - grosor / 2); // Inferior izquierda - atrás
+            GL.Vertex3(pos.X + grosor / 2, pos.Y - alto / 2, pos.Z + grosor / 2); // Inferior izquierda - delante
 
             GL.End();
         }
