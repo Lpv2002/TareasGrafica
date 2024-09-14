@@ -14,14 +14,32 @@ namespace LetraT3D
 {
     public class Game : GameWindow
     {
-        private Escenario Escenario1;
+        private Escenario escenario;
+        private Objeto objetoT;
+        private Objeto objetoT2;
+        private Parte parteHorizontal;
+
         private float rotationAngle = 0.0f;
 
         public Game() : base(800, 600) // Constructor que define el tamaño de la ventana
         {
-           /* Escenario1 = new Escenario(0.0f, 0.0f, 0.0f);
-            Objeto objetoT = new Objeto(0.0f, 0.0f, 0.0f);
+            escenario = new Escenario(0.0f, 0.0f, 0.0f);
 
+            //Leer el JSON desde el archivo
+            string json = File.ReadAllText(@"C:\Users\hp\Downloads\ProgramGrafica-Tarea3\ProgramGrafica-Tarea3\serializado.txt");
+            objetoT = JsonConvert.DeserializeObject<Objeto>(json);
+            escenario.AgregarObjeto("LetraT", objetoT);
+
+            //objetoT2 = JsonConvert.DeserializeObject<Objeto>(json);
+            //escenario.AgregarObjeto("LetraT2", objetoT2);
+
+            // Aquí obtenemos la parte  del objeto para aplicar las transformaciones
+            if (objetoT.partes.ContainsKey("horizontal"))
+            {
+                parteHorizontal = objetoT.partes["horizontal"];
+            }
+
+            /*
             // Partes de la T
             Parte horizontal = new Parte();
             Parte vertical = new Parte();
@@ -42,7 +60,7 @@ namespace LetraT3D
             Poligono carasuperiorV = new Poligono();
 
             // Armar el escenario
-            Escenario1.AgregarObjeto("ObjetoT", objetoT);
+            escenario.AgregarObjeto("ObjetoT", objetoT);
 
             // Ensamblar T
             objetoT.AgregarParte("horizontal", horizontal);
@@ -208,25 +226,20 @@ namespace LetraT3D
                 new Vertice(2.5, -20, 2.5),
             };
             carainferiorV.LoadVertices(punto12);
-           */
+            */
 
-            // Leer el JSON desde el archivo
-            string json = File.ReadAllText(@"C:\Users\hp\Downloads\ProgramGrafica-Tarea3\ProgramGrafica-Tarea3\serializado.txt");
-
-            // Deserializar el JSON en el objeto Escenario1
-            Escenario1 = JsonConvert.DeserializeObject<Escenario>(json);
-
-            // Serializa el escenario
-            //SerializarEscenario(@"C:\Users\hp\Downloads\ProgramGrafica-Tarea3\ProgramGrafica-Tarea3\serializado.txt");
+            //Serializa el objeto
+            //SerializarObjeto(objetoT,@"C:\Users\hp\Downloads\ProgramGrafica-Tarea3\ProgramGrafica-Tarea3\serializado.txt");
 
         }
 
-        private void SerializarEscenario(string filePath)
+
+        private void SerializarObjeto(Objeto objeto, string filePath)
         {
             try
             {
-                // Serializar el escenario a formato JSON
-                string json = JsonConvert.SerializeObject(Escenario1, Formatting.Indented);
+                // Serializar el objeto a formato JSON
+                string json = JsonConvert.SerializeObject(objeto, Formatting.Indented);
 
                 // Guardar el JSON en un archivo .txt
                 File.WriteAllText(filePath, json);
@@ -238,6 +251,7 @@ namespace LetraT3D
                 Console.WriteLine("Error de serialización: " + ex.Message);
             }
         }
+
 
         protected override void OnLoad(EventArgs e)
         {
@@ -267,10 +281,20 @@ namespace LetraT3D
 
             // Posiciona y orienta la cámara
             GL.Translate(0.0f, 0.0f, -30.0f); // Mueve la cámara más hacia atrás
-            GL.Rotate(20.0f, 1.0f, 0.0f, 0.0f); // Inclina la vista hacia abajo
-            GL.Rotate(40.0f + rotationAngle, 0.0f, 1.0f, 0.0f); // Rota la vista hacia un ángulo lateral
 
-            Escenario1.Dibujar();
+            // Aquí puedes mover, rotar o escalar tu escenario, objetos o partes
+            objetoT.Trasladar(1.0f, 0.0f, 0.0f); 
+            objetoT.Rotar("x", rotationAngle);  
+            escenario.Escalar(0.0f);
+
+            //if (parteHorizontal != null)
+            //{
+            //    parteHorizontal.Trasladar(1.0f, 0.0f, 0.0f);
+            //    parteHorizontal.Rotar("z", rotationAngle);
+            //    parteHorizontal.Escalar(1.0f);
+            //}
+
+            escenario.Dibujar();
 
             SwapBuffers();
         }
